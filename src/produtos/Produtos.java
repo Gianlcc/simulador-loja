@@ -20,6 +20,7 @@ public class Produtos {
 
             String codigo = this.getDIgito();
             continuar = this.manipuleCodigo(codigo);
+            
        
        }
         
@@ -29,6 +30,8 @@ public class Produtos {
     public boolean manipuleCodigo(String codigo) {
         if (codigo.equals("c")) {
             this.carrinhos.listarProdutos();
+            System.out.println("pressione enter para continuar");
+            this.scanner.nextLine();
             return true;
         } else if (codigo.equals("f")) {
             return false;
